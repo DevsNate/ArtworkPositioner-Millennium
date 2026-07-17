@@ -1,0 +1,28 @@
+{
+  "name": "artwork-positioner",
+  "version": "1.0.0",
+  "description": "A combined Millennium plugin for positioning Steam logos and heroes.",
+  "type": "module",
+  "main": "./frontend/index.jsx",
+  "author": "DevsNate",
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "dev": "millennium-ttc --build dev",
+    "build": "millennium-ttc --build prod"
+  },
+  "dependencies": {
+    "@steambrew/api": "^5.8.4",
+    "@steambrew/client": "^5.8.4",
+    "@steambrew/ttc": "^3.2.6",
+    "@steambrew/webkit": "^5.8.4",
+    "preact": "^10.25.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@types/react": "16.14.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/webpack": "^5.28.5"
+  }
+}

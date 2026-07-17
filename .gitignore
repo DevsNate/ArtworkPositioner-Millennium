@@ -1,0 +1,17 @@
+.millennium/
+node_modules/
+.diagnostics/
+.agents/
+.codex/
+
+# Runtime-generated user data
+offsets.json
+logo-data.json
+.hero-offsets-migrated-v1
+generated/hero-position.css
+*.previous
+*.tmp
+
+# Local release artifacts
+release/
+*.zip
