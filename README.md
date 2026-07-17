@@ -2,7 +2,7 @@
 
 Artwork Positioner is a [Millennium](https://steambrew.app/) plugin for controlling Steam library-page logos and hero artwork from one settings page and one shared Steam window integration.
 
-It combines the separate Logo Positioner and Hero Position plugins while keeping their editing systems independent: logos can be dragged and resized, while heroes use horizontal and vertical crop offsets.
+It combines the Logo Positioner and Hero Position logic while keeping their editing systems independent: logos can be dragged and resized, while heroes use horizontal and vertical crop offsets.
 
 ## Features
 
