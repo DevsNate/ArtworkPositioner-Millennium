@@ -19,6 +19,7 @@ It combines the Logo Positioner and Hero Position logic while keeping their edit
 ### Hero positioning
 
 - Adjust horizontal and vertical hero crop offsets per game.
+- Apply Big Picture offsets only to the active game-details hero, leaving library/home backdrops centered.
 - Store four independent values per game: Desktop horizontal/vertical and Big Picture horizontal/vertical.
 - Open the editor from the game context menu or plugin settings.
 - Generate narrowly scoped CSS for only the games with saved offsets.

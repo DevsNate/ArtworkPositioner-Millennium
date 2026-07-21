@@ -127,15 +127,22 @@ local function css_for_offsets(offsets)
     for _, position_key in ipairs(position_keys) do
         local position = positions[position_key]
         local appid = position.appid
-        local selectors = {
-            "img[src*=\"/customimages/" .. appid .. "_hero.\"]",
-            "img[src*=\"/" .. appid .. "_hero.\"]",
-            "img[src*=\"/" .. appid .. "_library_hero\"]",
-            "img[src*=\"/librarycache/" .. appid .. "/hero\"]",
-            "img[src*=\"/librarycache/" .. appid .. "/library_hero\"]",
-            "img[src*=\"/apps/" .. appid .. "/library_hero\"]",
-            "img[src*=\"/assets/" .. appid .. "/\"][src*=\"/library_hero\"]",
-        }
+        local selectors
+        if position.mode == "Big Picture" then
+            selectors = {
+                "[data-artwork-positioner-bigpicture-hero-appid=\"" .. appid .. "\"]",
+            }
+        else
+            selectors = {
+                "img[src*=\"/customimages/" .. appid .. "_hero.\"]",
+                "img[src*=\"/" .. appid .. "_hero.\"]",
+                "img[src*=\"/" .. appid .. "_library_hero\"]",
+                "img[src*=\"/librarycache/" .. appid .. "/hero\"]",
+                "img[src*=\"/librarycache/" .. appid .. "/library_hero\"]",
+                "img[src*=\"/apps/" .. appid .. "/library_hero\"]",
+                "img[src*=\"/assets/" .. appid .. "/\"][src*=\"/library_hero\"]",
+            }
+        end
         local horizontal_direction = position.horizontal < 0 and "-" or "+"
         local vertical_direction = position.vertical < 0 and "-" or "+"
         parts[#parts + 1] = "/* " .. position.mode .. ": App " .. appid .. " */"

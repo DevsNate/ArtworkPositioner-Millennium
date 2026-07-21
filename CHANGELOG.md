@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Big Picture hero offsets now apply only to the game-details hero and no longer shift the library/home backdrop.
+
 ## 1.0.0 - 2026-07-17
 
 Initial public release of Artwork Positioner.
